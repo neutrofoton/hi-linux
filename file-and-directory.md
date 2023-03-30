@@ -114,7 +114,21 @@
    # Numeric way
    chmod -R 640 folder_name
    ```
+
+   |              |User (u)| Group (g) |Other (o)  |
+   |---           | ---    | ---       |---        |
+   |Read (4)      |✔       |✔         |           |
+   |Write (2)     |✔       |           |          |
+   |Execute (1)   |        |           |           |
+   | **RESULT**             | 6      | 4       | 0           |      
+   
+
+
+
+
 References:
-1. https://javarevisited.blogspot.com/2012/03/10-example-of-chmod-command-in-unix.html
-2. https://www.interviewbit.com/linux-commands-cheat-sheet/#file-permissions
+1. https://chmodcommand.com/chmod-640/
+2. https://javarevisited.blogspot.com/2012/03/10-example-of-chmod-command-in-unix.html
+3. https://www.interviewbit.com/linux-commands-cheat-sheet/#file-permissions
+4. https://meta.stackexchange.com/questions/314520/markdown-for-ticks-and-crosses
     
