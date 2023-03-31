@@ -51,5 +51,13 @@ The parameters are:
 - <code>R</code> → specifies remote port forwarding
 - <code>N</code> → do not execute a remote command.
 
+# Netstat
+``` bash
+#netstat -np <protocol> | find "port #"
+netstat -np TCP | find "80"
+
+# show table of all network interfaces
+netstat -i
+```
 # References
 1. https://ret2rop.blogspot.com/2018/08/port-forwarding-ssh-tunneling.html
