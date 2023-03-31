@@ -55,7 +55,7 @@
  
    ## Symbolic Method
    ```
-   chmod [ugoa][-+=][rwx,...] FILE….
+   chmod [ugoa][-+=][rwx], [ugoa][-+=][rwx],.. FileName
    ```
 
    Detail items of the syntax are:
