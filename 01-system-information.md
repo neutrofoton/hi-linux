@@ -52,6 +52,29 @@ $ w
    $ whoami
 ```
 
+# Root User and Switch User
+``` bash
+# substitutes the current user for root in the current shell
+$ su
+
+# switch to other user
+$ su otheruser
+
+# will give you superuser access, but you will still remain 'yourself' (so to speak).
+# so things like ~ will still be your home directory.
+$ sudo -s
+
+# It’s essentially the same as just running su in the shell.
+# asks for the current user’s password rather than root
+# Root is given by requesting the current user’s password, which makes it possible to gain root without the root password.
+$ sudo su
+
+# virtually the same as the sudo su command with one exception: it does not directly interact with the root user.
+$ sudo -i
+```
+
+
+
 # Disk and Memory
 ``` bash
 # show disk usage
@@ -63,8 +86,16 @@ $ du
 # show human readable size in MB or GB
 $ du -sh
 
+# display folder size. du (directory usage)
+$ du -sh foldername
+
 # show memory and swap usage
 $ free
+```
+
+``` bash
+
+
 ```
 
 
@@ -104,7 +135,6 @@ $ systemctl daemon-reload
 # show current date and time
 $ date 
 
-
 ```
 
 # Process
@@ -126,3 +156,5 @@ $ which docker
 
 # References
 1. https://www.geeksforgeeks.org/linux-directory-structure/
+2. https://www.maketecheasier.com/differences-between-su-sudo-su-sudo-s-sudo-i/
+3. https://apple.stackexchange.com/questions/14623/why-cant-i-run-su-and-how-should-i-do

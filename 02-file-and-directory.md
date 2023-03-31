@@ -16,7 +16,7 @@
    $ cat file1.txt  file2.txt > file3.txt
    
    ```
-# Permission
+# Permission / Change Mode (chmod)
 
    There are 3 type of people accessing a file/directory, they are:
    - User (u)
@@ -122,6 +122,13 @@
    |Execute (1)   |        |           |           |
    | **RESULT**             | 6      | 4       | 0           |      
    
+# Ownership / Changing Owner (chown)
+```
+chown [OPTIONS] [USER][:GROUP] file1 file2
+
+chown -R myuser:mygroup /var/www/sitename
+
+```
 
 # Searching
 ``` bash
@@ -136,6 +143,42 @@ ls -a | grep *config*
 # find all instances of file
 locate {file}
 ```
+
+``` bash
+# find file of extension
+$ find . -type f -name "*.jar"
+
+# find directory
+$ find . -type d -name ".DS_Store"
+```
+
+# Copy
+``` bash
+#copy recursively and force override and apply to all
+yes|cp -rf /home/userftp/html/site/* /home/user1/html/
+```
+
+
+# Tail
+
+``` bash
+#Outputs the last 10 lines of the file myfile.txt.
+$ tail myfile.txt
+
+#Outputs the last 100 lines of the file myfile.txt.
+$ tail myfile.txt -n 100
+
+# Outputs the last 10 lines of myfile.txt, and monitors myfile.txt for updates;
+# tail then continues to output any new lines that are added to myfile.txt.
+$ tail -f myfile.txt
+
+# Sample with grep
+$ tail -f access.log | grep 24.10.160.10
+
+# in practical I use
+$ tail -fn 100 log.txt
+```
+
 
 # Compression
 
