@@ -11,6 +11,13 @@
 
    # find the location of source/binary file
    $ whereis xxxx
+
+   # display host name info
+   $ hostnamectl status
+
+   # set host name
+   $ hostnamectl set-hostname "Your New Host Name Here"
+   
    ```
 # Linux Directory Structure
 These are the common top-level directories associated with the root directory:
@@ -41,6 +48,42 @@ Some other directories in the Linux system:
 |/srv       | It contains server-specific and server-related files|
 |/sys       | It is a virtual filesystem for modern Linux distributions to store and allows modification of the devices connected to the system|
 
+# Services
+``` bash
+# show all service
+$ systemctl list-unit-files    
+
+# show All service of type service
+$ systemctl  list-units --type service    
+
+# show All service by mount
+$ systemctl  list-units --type mount   
+
+# show httpd service
+$ systemctl | grep httpd   
+$ systemctl list-units | grep httpd
+
+# check service status
+$ systemctl status docker
+
+# enable service
+$ systemctl enable docker
+
+# start service docker
+$ sudo systemctl start docker
+
+# restart service docker
+$ systemctl restart docker
+
+# reload daemon
+$ systemctl daemon-reload
+```
+
+# Process
+``` bash
+# Task Manager like
+$ systemd-cgtop
+```
 
 # References
 1. https://www.geeksforgeeks.org/linux-directory-structure/
