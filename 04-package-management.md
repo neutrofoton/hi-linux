@@ -13,8 +13,8 @@
 |Debian/Ubuntu              | sudo apt-get update, sudo apt update          |
 |CentOS                     | yum check-update          |
 |Fedora                     | dnf check-update          |
-|FreeBSD                    | Package : sudo pkg update   |
-|                           | Ports: sudo portsnap fetch update   |
+|FreeBSD (Package)          | sudo pkg update   |
+|FreeBSD (Ports)            | sudo portsnap fetch update   |
 
 # Upgrade Installed Packages
 |Operating System           |Command                                     | Note     |
