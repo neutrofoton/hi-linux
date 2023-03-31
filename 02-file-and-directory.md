@@ -123,9 +123,62 @@
    | **RESULT**             | 6      | 4       | 0           |      
    
 
+# Searching
+``` bash
+# search for patthern in file
+grep -r {pattern} {directory}
+grep -r *.config /etc 
 
+# filter by pattern the output of command
+{command} | grep {pattern}
+ls -a | grep *config*
 
+# find all instances of file
+locate {file}
+```
 
+# Compression
+
+## tar
+``` bash
+# tar file or directory into a file.tar
+tar cf file.tar {file_or_directory}
+
+# untar into current directory
+tar xf file.tar
+
+# show content of tar archive
+tar tf file.tar
+```
+Tar paremeter:
+   - <code>c</code> → create archive
+   - <code>t</code> → table of content
+   - <code>x</code> → extract
+   - <code>f</code> → file name
+   - <code>z</code> → use zip/gzip
+   - <code>j</code> → use bzip2
+   - <code>k</code> → don't override
+   - <code>w</code> → ask for confirmation
+   - <code>v</code> → verbose
+## gzip
+``` bash
+# compress file and rename to file.gz
+gzip file
+
+# decompress file.gz
+gzip -d file.gz
+```
+
+# File Operation from Network
+
+## wget
+``` bash
+# download file
+wget url
+
+# download recursively
+wget -r url
+```
 # References:
 1. https://chmodcommand.com/chmod-640/
 2. https://javarevisited.blogspot.com/2012/03/10-example-of-chmod-command-in-unix.html

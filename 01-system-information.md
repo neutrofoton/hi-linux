@@ -1,24 +1,18 @@
+
 # Computer/Host
-   ``` bash
-   # show the name of the system host.
-   $ hostname
+ ``` bash
+ # show the name of the system host.
+ $ hostname
+ # displays the id of the host of the system.
+ $ hostid
+ 
+ # display host name info
+ $ hostnamectl status
+ # set host name
+ $ hostnamectl set-hostname "Your New Host Name Here"
+ 
+ ```
 
-   # displays the id of the host of the system.
-   $ hostid
-
-   # displays the name with which you are logged in
-   $ whoami
-
-   # find the location of source/binary file
-   $ whereis xxxx
-
-   # display host name info
-   $ hostnamectl status
-
-   # set host name
-   $ hostnamectl set-hostname "Your New Host Name Here"
-   
-   ```
 # Linux Directory Structure
 These are the common top-level directories associated with the root directory:
 
@@ -47,6 +41,32 @@ Some other directories in the Linux system:
 |/sbin      | binary executable programs for an administrator|
 |/srv       | It contains server-specific and server-related files|
 |/sys       | It is a virtual filesystem for modern Linux distributions to store and allows modification of the devices connected to the system|
+
+
+# User Info
+``` bash
+# display who us online
+$ w
+
+ # displays the name with which you are logged in
+   $ whoami
+```
+
+# Disk and Memory
+``` bash
+# show disk usage
+$ df
+
+# show directory space usage
+$ du
+
+# show human readable size in MB or GB
+$ du -sh
+
+# show memory and swap usage
+$ free
+```
+
 
 # Services
 ``` bash
@@ -79,10 +99,29 @@ $ systemctl restart docker
 $ systemctl daemon-reload
 ```
 
+# Date
+``` bash
+# show current date and time
+$ date 
+
+
+```
+
 # Process
 ``` bash
 # Task Manager like
 $ systemd-cgtop
+```
+
+# Application
+``` bash
+# show possible location of app
+$ whereis {app}
+$ whereis docker
+
+# show which app will be run by default
+$ which {app}
+$ which docker
 ```
 
 # References
