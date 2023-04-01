@@ -26,7 +26,7 @@
 |CentOS                     | sudo yum update                                      |           |     
 |Fedora                     | sudo dnf upgrade                                      |           | 
 |FreeBSD (Package)          | sudo pkg upgrade                               |        | 
-|FreeBSD (Port)             | less /usr/ports/UPDATING                  | Uses less to view update notes for ports (use arrow kes to scroll, press q to quit).| 
+|FreeBSD (Port)             | less /usr/ports/UPDATING                  | Uses less to view update notes for ports (use arrow keys to scroll, press q to quit).| 
 |                           | cd /usr/ports/ports-mgmt/portmaster && sudo make install && sudo portmaster -a                  | Installs portmaster and uses it to update installed ports.| 
 
 # Find a Package
@@ -64,7 +64,7 @@
 |Debian/Ubuntu    |  sudo apt-get install <span style="color:red">package</span>  |           | 
 |                 |  sudo apt-get install <span style="color:red">package1</span> <span style="color:red">package2</span> ...   | install multiple packages | 
 |                 |  sudo apt-get install -y <span style="color:red">package</span>  | assumes "yes" where <code>apt</code> would usuall prompt to continue | 
-|                 |  sudo apt install <span style="color:red">package</span>  |displays a colored progress ar           | 
+|                 |  sudo apt install <span style="color:red">package</span>  |displays a colored progress bar           | 
 |CentOS           | sudo yum install <span style="color:red">package</span>         |           |   
 |                 | sudo yum install <span style="color:red">package1</span> <span style="color:red">package2</span> ...      | install multiple packages  |   
 |                 | sudo yum install -y <span style="color:red">package</span>      | assumes "yes" where <code>yum</code> would usuall prompt to continue |    
@@ -101,3 +101,6 @@
 |                           | sudo pkg autoremove | removes unneeded packages     | 
 |FreeBSD (Port)             | sudo pkg delete <span style="color:red">package</span> |           | 
 |                           | cd /usr/ports/<span style="color:red">path_to_port</span> && make deinstall |           | 
+
+# References
+1. https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg
