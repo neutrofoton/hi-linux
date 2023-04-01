@@ -1,45 +1,46 @@
 # List file and directory 
-   ``` bash
-   # Lists files and directories recursively
-   $ ls -R
+ ``` bash
+# Lists files and directories recursively
+ls -R
+ ```
 
-   ```
 # CRUD a file
-   ``` bash
-   # read a file
-   cat file1.txt
+``` bash
+# read a file
+cat file1.txt
 
-   # create a file
-   $ cat > file1.txt
+# create a file
+cat > file1.txt
 
-   # join multiple file into a file
-   $ cat file1.txt  file2.txt > file3.txt
+# join multiple file into a file
+cat file1.txt  file2.txt > file3.txt
    
-   ```
+```
+
 # Permission / Change Mode (chmod)
 
-   There are 3 type of people accessing a file/directory, they are:
+There are 3 type of people accessing a file/directory, they are:
    - User (u)
    - Group (g)
    - Others (o)
    
-   Also, there are 3 type of access to each of them:
+Also, there are 3 type of access to each of them:
    - Read (r)
    - Write (w)
    - Execute (x)
 
-   The people and its access are shown in following format:
+The people and its access are shown in following format:
 
    
-   <img src="images/chmod-person-type.png" alt="" width="70%" height="50%"/>
-   <img src="images/file-person-access.png" alt="" width="70%" height="50%"/>
-   
-   <br/>
+<img src="images/chmod-person-type.png" alt="" width="70%" height="50%"/>
+<img src="images/file-person-access.png" alt="" width="70%" height="50%"/>
 
-   > **Notes:** <br/>
-   > The ilustration pictures are refered from [interviewbit.com](https://www.interviewbit.com/linux-commands-cheat-sheet/#file-permissions) and [javarevisited](https://javarevisited.blogspot.com/2012/03/10-example-of-chmod-command-in-unix.html)
+<br/>
+
+> **Notes:** <br/>
+> The ilustration pictures are refered from [interviewbit.com](https://www.interviewbit.comlinux-commands-cheat-sheet/#file-permissions) and [javarevisited](https://javarevisited.blogspot.com/2012/0310-example-of-chmod-command-in-unix.html)
    
-   The file type value:
+The file type value:
    - <code>d</code> → directory
    - <code>-</code> → regular file
    - <code>l</code> → Symbolic Link
@@ -48,12 +49,12 @@
    - <code>c</code> → character device file
    - <code>b</code> → block device file
 
-   <br/>   
-   To manage access and permission we use <code>*chmode*</code> 
-   <br/>   
-   <br/>  
+<br/>   
+To manage access and permission we use <code>*chmode*</code> 
+<br/>   
+<br/>  
  
-   ## Symbolic Method
+## Symbolic Method
    ```
    chmod [ugoa][-+=][rwx], [ugoa][-+=][rwx],.. FileName
    ```
@@ -146,16 +147,17 @@ locate {file}
 
 ``` bash
 # find file of extension
-$ find . -type f -name "*.jar"
+find . -type f -name "*.jar"
 
 # find directory
-$ find . -type d -name ".DS_Store"
+find . -type d -name ".DS_Store"
 ```
 
 # Copy
 ``` bash
 #copy recursively and force override and apply to all
 yes|cp -rf /home/userftp/html/site/* /home/user1/html/
+
 ```
 
 
@@ -163,20 +165,20 @@ yes|cp -rf /home/userftp/html/site/* /home/user1/html/
 
 ``` bash
 #Outputs the last 10 lines of the file myfile.txt.
-$ tail myfile.txt
+tail myfile.txt
 
 #Outputs the last 100 lines of the file myfile.txt.
-$ tail myfile.txt -n 100
+tail myfile.txt -n 100
 
 # Outputs the last 10 lines of myfile.txt, and monitors myfile.txt for updates;
 # tail then continues to output any new lines that are added to myfile.txt.
-$ tail -f myfile.txt
+tail -f myfile.txt
 
 # Sample with grep
-$ tail -f access.log | grep 24.10.160.10
+tail -f access.log | grep 192.168.1.7
 
 # in practical I use
-$ tail -fn 100 log.txt
+tail -fn 100 log.txt
 ```
 
 
@@ -203,6 +205,7 @@ Tar paremeter:
    - <code>k</code> → don't override
    - <code>w</code> → ask for confirmation
    - <code>v</code> → verbose
+
 ## gzip
 ``` bash
 # compress file and rename to file.gz
@@ -222,6 +225,7 @@ wget url
 # download recursively
 wget -r url
 ```
+
 # References:
 1. https://chmodcommand.com/chmod-640/
 2. https://javarevisited.blogspot.com/2012/03/10-example-of-chmod-command-in-unix.html

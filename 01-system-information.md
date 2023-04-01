@@ -2,14 +2,16 @@
 # Computer/Host
  ``` bash
  # show the name of the system host.
- $ hostname
+ hostname
+
  # displays the id of the host of the system.
- $ hostid
+ hostid
  
  # display host name info
- $ hostnamectl status
+ hostnamectl status
+
  # set host name
- $ hostnamectl set-hostname "Your New Host Name Here"
+ hostnamectl set-hostname "Your New Host Name Here"
  
  ```
 
@@ -46,31 +48,31 @@ Some other directories in the Linux system:
 # User Info
 ``` bash
 # display who us online
-$ w
+w
 
- # displays the name with which you are logged in
-   $ whoami
+# displays the name with which you are logged in
+whoami
 ```
 
 # Root User and Switch User
 ``` bash
 # substitutes the current user for root in the current shell
-$ su
+su
 
 # switch to other user
-$ su otheruser
+su otheruser
 
 # will give you superuser access, but you will still remain 'yourself' (so to speak).
 # so things like ~ will still be your home directory.
-$ sudo -s
+sudo -s
 
 # It’s essentially the same as just running su in the shell.
 # asks for the current user’s password rather than root
 # Root is given by requesting the current user’s password, which makes it possible to gain root without the root password.
-$ sudo su
+sudo su
 
 # virtually the same as the sudo su command with one exception: it does not directly interact with the root user.
-$ sudo -i
+sudo -i
 ```
 
 
@@ -78,80 +80,74 @@ $ sudo -i
 # Disk and Memory
 ``` bash
 # show disk usage
-$ df
+df
 
 # show directory space usage
-$ du
+du
 
 # show human readable size in MB or GB
-$ du -sh
+du -sh
 
 # display folder size. du (directory usage)
-$ du -sh foldername
+du -sh foldername
 
 # show memory and swap usage
-$ free
+free
 ```
-
-``` bash
-
-
-```
-
 
 # Services
 ``` bash
 # show all service
-$ systemctl list-unit-files    
+systemctl list-unit-files    
 
 # show All service of type service
-$ systemctl  list-units --type service    
+systemctl  list-units --type service    
 
 # show All service by mount
-$ systemctl  list-units --type mount   
+systemctl  list-units --type mount   
 
 # show httpd service
-$ systemctl | grep httpd   
-$ systemctl list-units | grep httpd
+systemctl | grep httpd   
+systemctl list-units | grep httpd
 
 # check service status
-$ systemctl status docker
+systemctl status docker
 
 # enable service
-$ systemctl enable docker
+systemctl enable docker
 
 # start service docker
-$ sudo systemctl start docker
+sudo systemctl start docker
 
 # restart service docker
-$ systemctl restart docker
+systemctl restart docker
 
 # reload daemon
-$ systemctl daemon-reload
+systemctl daemon-reload
 ```
 
 # Date
 ``` bash
 # show current date and time
-$ date 
+date 
 
 ```
 
 # Process
 ``` bash
 # Task Manager like
-$ systemd-cgtop
+systemd-cgtop
 ```
 
 # Application
 ``` bash
 # show possible location of app
-$ whereis {app}
-$ whereis docker
+whereis {app}
+whereis docker
 
 # show which app will be run by default
-$ which {app}
-$ which docker
+which {app}
+which docker
 ```
 
 # References
