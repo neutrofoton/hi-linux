@@ -151,6 +151,9 @@ find . -type f -name "*.jar"
 
 # find directory
 find . -type d -name ".DS_Store"
+
+# find then execute remove
+find . -name "*.py" -exec rm {} \;
 ```
 
 # Copy
