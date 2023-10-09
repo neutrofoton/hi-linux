@@ -229,6 +229,41 @@ wget url
 wget -r url
 ```
 
+# Directoy Usage
+```bash
+sudo du -sh /var/opt/mssql2022
+
+# result will be
+16K	/var/opt/mssql2022
+```
+
+```bash
+# has * at the end. Will summaize direct sub directory
+sudo du -shc mssql2022/*
+
+# result will be.
+4.0K	mssql2022/data
+4.0K	mssql2022/log
+4.0K	mssql2022/secrets
+12K	total
+```
+
+
+```bash
+# a. Print recursively directory under ~/workspace
+# b. sort -r=reverse, -h=human readible
+# c. head -5=first 5 record
+
+sudo du -h ~/workspace | sort -rh | head -5
+
+# result will be.
+25M	/home/neutro/workspace
+22M	/home/neutro/workspace/TestDocker
+17M	/home/neutro/workspace/TestDocker/examples
+8.0M	/home/neutro/workspace/TestDocker/examples/MyWebMVC/wwwroot
+8.0M	/home/neutro/workspace/TestDocker/examples/MyWebMVC
+
+```
 # References:
 1. https://chmodcommand.com/chmod-640/
 2. https://javarevisited.blogspot.com/2012/03/10-example-of-chmod-command-in-unix.html
