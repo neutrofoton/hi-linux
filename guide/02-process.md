@@ -46,9 +46,14 @@ kill 1557
 
 # Data Stream of Process
 Every process has 3 data stream.
-- <code>stdin</code>
-- <code>stdout</code>
-- <code>stderr</code>
+
+<sub>*Data Stream of Process*</sub>
+| ID        | Data Stream     |
+| :---        |     :---:     | 
+| 0     | <code>stdin</code>  | 
+| 1     | <code>stdout</code> |
+| 2     | <code>stderr</code> |
+
 
 <img src="../images/stdin-stdout-stderr.png" alt="" width="70%" height="50%"/>
 
@@ -75,4 +80,59 @@ The cycle of process that is called from terminal is :
 
     # redirect stderr
     $ mkdir 2> output-err.txt
+    ```
+
+- We can send stream to <code>stdin</code> of a process using in data stream operator <code> < </code>
+    ```bash
+    # normal using cat
+    $ cat err.txt
+
+    # send err.txt as a file stream to stdin.
+    $ cat < err.txt
+
+    # another way by specifying data stream ID (0=stdin)
+    $ cat 0< err.txt
+    
+
+    # output of the two is the same. 
+    # since the cat make the parameter as input stream as we do in the second way.
+    ```
+
+- We can also send <code>stdout</code> and <code>stderr</code> to files at once.
+    ```bash
+    # ls is the command
+    # 1 is id of stdout
+    # 2 is id of stderr
+    # > is out data stream to a file (override of existing content)
+    # >> is out data stream to a file (append to existing content)
+
+    $ ls 1> output.txt 2> err.txt
+    $ mkdir 1>> output.txt 2>> err.txt
+    $ cat file_not_exist.txt 1>> output.txt 2>> err.txt
+    ```
+
+- We can also chain sending <code>stdout</code> a process to <code>stdin</code> other process.
+
+    <img src="../images/pipe-data-stream.png" alt="" width="70%" height="50%"/>
+
+    To send stdout of a pocess to other we use <code>|</code> operator
+
+    ```bash
+    $ echo "hello world"
+    
+    # the output is: 
+    # hello world
+
+    # stdout of echo will be stdin of cat.
+    # the stdout of cat will be write to hello.txt
+    $ echo "hello world" | cat > hello.txt
+
+    # the result is same as the above using data stream ID (1=stdout)
+    $ echo "hello world" | cat 1> hello.txt
+
+    # same as above command except it will append instead of override
+    $ echo "hello world again" | cat >> hello.txt
+
+    # anothe way of append using data stream ID (1=stdout)
+    $ echo "hello world again" | cat 1>> hello.txt
     ```
