@@ -54,12 +54,6 @@ To manage access and permission we use <code>*chmode*</code>
 <br/>   
 <br/>  
  
- <sub>*Directory Permission*</sub>
-| ID        | Description     |
-| :---        |     :---     | 
-| r     | allow to list files in the directory  | 
-| w     | allow rename, create, delete files in the directory|
-| x     | allow to <code>cd</code> into diretory and access files |
 
 ## Symbolic Method
    ```
@@ -84,6 +78,14 @@ To manage access and permission we use <code>*chmode*</code>
       1. <code>r</code> → Read
       2. <code>w</code> → Write
       3. <code>x</code> → Execute
+
+
+      | ID        | File     |Directory     |                             
+      | :---        |     :---     | :---     | 
+      | r     | allow read the file  | allow to list files in the directory  |
+      | w     | allow write, modify the file| allow rename, create, delete files in the directory|
+      | x     | allow execute the file | allow to <code>cd</code> into diretory and access files |
+
 
    Examples:
    ``` bash
