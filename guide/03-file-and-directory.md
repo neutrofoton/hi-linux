@@ -32,8 +32,8 @@ Also, there are 3 type of access to each of them:
 The people and its access are shown in following format:
 
    
-<img src="images/chmod-person-type.png" alt="" width="70%" height="50%"/>
-<img src="images/file-person-access.png" alt="" width="70%" height="50%"/>
+<img src="../images/chmod-person-type.png" alt="" width="70%" height="50%"/>
+<img src="../images/file-person-access.png" alt="" width="70%" height="50%"/>
 
 <br/>
 
