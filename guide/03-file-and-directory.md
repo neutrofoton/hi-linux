@@ -28,13 +28,13 @@ Also, there are 3 type of access to each of them:
    - Read (r)
    - Write (w)
    - Execute (x)
-<br/>
 
-      | Permission        | File     |Directory     |                             
-      | :---        |     :---     | :---     | 
-      | r     | allow read the file  | allow to list files in the directory  |
-      | w     | allow write, modify the file| allow rename, create, delete files in the directory|
-      | x     | allow execute the file | allow to <code>cd</code> into diretory and access files |
+
+| Permission        | File     |Directory     |                             
+| :---        |     :---     | :---     | 
+| r     | allow read the file  | allow to list files in the directory  |
+| w     | allow write, modify the file| allow rename, create, delete files in the directory|
+| x     | allow execute the file | allow to <code>cd</code> into diretory and access files |
    
 
 The people and its access are shown in following format:
