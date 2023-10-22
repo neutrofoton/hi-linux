@@ -79,8 +79,9 @@ To manage access and permission we use <code>*chmode*</code>
       2. <code>w</code> → Write
       3. <code>x</code> → Execute
 
+      <br/>
 
-      | ID        | File     |Directory     |                             
+      | Permission        | File     |Directory     |                             
       | :---        |     :---     | :---     | 
       | r     | allow read the file  | allow to list files in the directory  |
       | w     | allow write, modify the file| allow rename, create, delete files in the directory|
