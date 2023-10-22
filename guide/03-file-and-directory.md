@@ -54,6 +54,13 @@ To manage access and permission we use <code>*chmode*</code>
 <br/>   
 <br/>  
  
+ <sub>*Directory Permission*</sub>
+| ID        | Description     |
+| :---        |     :---     | 
+| r     | allow to list files in the directory  | 
+| w     | allow rename, create, delete files in the directory|
+| x     | allow to <code>cd</code> into diretory and access files |
+
 ## Symbolic Method
    ```
    chmod [ugoa][-+=][rwx], [ugoa][-+=][rwx],.. FileName
