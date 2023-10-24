@@ -35,9 +35,9 @@ ssh –L 6969:webserver:80 user@ssh_server.com –f -N
 ```
 
 The parameters are:
-    - <code>L</code> → specifies local port forwarding
-    - <code>f</code> → requests ssh to go to background just before command execution,
-    - <code>N</code> → do not execute a remote command.
+- <code>L</code> → specifies local port forwarding
+- <code>f</code> → requests ssh to go to background just beforecommand execution,
+- <code>N</code> → do not execute a remote command.
 
 ## Remote Port Forward
 <img src="images/ssh-forward-remote-port.png" alt=""/>
@@ -48,8 +48,8 @@ ssh –R 8080:localhost:6969 user@ssh_server.com -N
 
 ```
 The parameters are:
-    - <code>R</code> → specifies remote port forwarding
-    - <code>N</code> → do not execute a remote command.
+- <code>R</code> → specifies remote port forwarding
+- <code>N</code> → do not execute a remote command.
 
 # Netstat
 ``` bash
@@ -60,4 +60,4 @@ netstat -np TCP | find "80"
 netstat -i
 ```
 # References
-1. https://ret2rop.blogspot.com/2018/08/port-forwarding-ssh-tunneling.html
+- https://ret2rop.blogspot.com/2018/08/port-forwarding-ssh-tunneling.html
