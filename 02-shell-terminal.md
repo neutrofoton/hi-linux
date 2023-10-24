@@ -12,7 +12,7 @@ The command is writen in a terminal application. When enter is pressed, the comm
 Diffrent shell may interprete command diffrently. For example : Bourne shell (sh)
 
    
-<img src="../images/command-to-shell.png" alt="" width="70%" height="50%"/>
+<img src="images/command-to-shell.png" alt="" width="70%" height="50%"/>
 
 ``` bash
 # run and interactive using s

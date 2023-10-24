@@ -5,7 +5,7 @@ ln -s FILE_ORIGINAL FILE_SOFT_LINK
 ```
 Example:
 
-<img src="../images/softlink.png" alt=""/>
+<img src="images/softlink.png" alt=""/>
 
 
 # Hard Link
@@ -15,7 +15,7 @@ ln -s FILE_ORIGINAL FILE_HARD_LINK
 ```
 Example:
 
-<img src="../images/hardlink.png" alt="" />
+<img src="images/hardlink.png" alt="" />
 
 
 # Summary

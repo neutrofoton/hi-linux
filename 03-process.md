@@ -55,7 +55,7 @@ Every process has 3 data stream.
 | 2     | <code>stderr</code> |
 
 
-<img src="../images/stdin-stdout-stderr.png" alt="" width="70%" height="50%"/>
+<img src="images/stdin-stdout-stderr.png" alt="" />
 
 The cycle of process that is called from terminal is :
 - The data input from keyboard
@@ -113,7 +113,7 @@ The cycle of process that is called from terminal is :
 
 - We can also chain sending <code>stdout</code> a process to <code>stdin</code> other process.
 
-    <img src="../images/pipe-data-stream.png" alt="" width="70%" height="50%"/>
+    <img src="images/pipe-data-stream.png" alt=""/>
 
     To send stdout of a pocess to other we use <code>|</code> operator
 
