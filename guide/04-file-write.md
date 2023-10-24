@@ -11,3 +11,25 @@ cat > large-file.txt
 # 3. Paste the text in the terminal.
 # 4. CTRL+C to exit 
 ```
+
+
+# Cat to Read and Write
+``` bash
+# read a file
+cat file1.txt
+
+# create a file
+cat > file1.txt
+
+# join multiple file into a file
+cat file1.txt  file2.txt > file3.txt
+   
+```
+
+
+# Copy
+``` bash
+#copy recursively and force override and apply to all
+yes|cp -rf /home/userftp/html/site/* /home/user1/html/
+
+```
