@@ -131,31 +131,6 @@ chown -R myuser:mygroup /var/www/sitename
 
 ```
 
-# Searching
-``` bash
-# search for patthern in file
-grep -r {pattern} {directory}
-grep -r *.config /etc 
-
-# filter by pattern the output of command
-{command} | grep {pattern}
-ls -a | grep *config*
-
-# find all instances of file
-locate {file}
-```
-
-``` bash
-# find file of extension
-find . -type f -name "*.jar"
-
-# find directory
-find . -type d -name ".DS_Store"
-
-# find then execute remove
-find . -name "*.py" -exec rm {} \;
-```
-
 
 # Compression
 
