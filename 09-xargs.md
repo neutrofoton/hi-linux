@@ -37,3 +37,11 @@ ls | xargs cat
 ```
 
 # <code>find</code> using <code>xargs</code> vs <code>exec</code>
+
+```bash
+# using exec argument
+find / -name kernel -type d -exec ls -l --color {} \;
+
+# using xargs
+find / -name kernel -type d | xargs ls -l --color
+```
