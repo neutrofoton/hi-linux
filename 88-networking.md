@@ -1,3 +1,12 @@
+# wget
+``` bash
+# download file
+wget url
+
+# download recursively
+wget -r url
+```
+
 # SCP
 ``` bash
 # copy from remote to local

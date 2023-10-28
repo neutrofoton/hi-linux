@@ -53,14 +53,17 @@ w
 # displays the name with which you are logged in
 whoami
 ```
-
-# Root User and Switch User
+# User
+### Root User and Switch User
 ``` bash
 # substitutes the current user for root in the current shell
 su
 
 # switch to other user
 su otheruser
+
+# switch to other user, and switch current directory to the home of otheruser
+su - otheruser
 
 # will give you superuser access, but you will still remain 'yourself' (so to speak).
 # so things like ~ will still be your home directory.
@@ -75,7 +78,48 @@ sudo su
 sudo -i
 ```
 
+### Creating Users
+Detail list of existing user can be found in
+```bash
+cat /etc/passwd
+```
 
+- Creating user with <code>useradd</code> <br/>
+
+  The default shell for new user is defined in <code>/etc/default/useradd</code>
+
+    ```bash
+    # create user only (WITHOUT home directory)
+    useradd foo 
+
+    # create user only (WITH home directory)
+    useradd -m foo 
+
+    # set password for foo user
+    passwd foo
+
+    # delete user foo (NOT delete home directory)
+    userdel foo
+
+    # delete user foo (ALSO delete home directory)
+    userdel -r foo
+    ```
+
+- Creating user with <code>adduser</code> <br/>
+  The default shell for new user is defined in <code>/etc/adduser.conf</code>
+
+    ```bash
+    # The following command will:
+    # a. Create user 'foo'
+    # b. Create a group 'foo'
+    # c. Add 'foo' user to 'foo' group
+    # d. Create home directory '/home/foo'
+    # e. Prompt 'New password'
+    # f. Other additional info are prompted
+
+    adduser foo
+    ```
+    
 
 # Disk and Memory
 ``` bash

@@ -132,39 +132,6 @@ chown -R myuser:mygroup /var/www/sitename
 ```
 
 
-# Compression
-
-## tar
-``` bash
-# tar file or directory into a file.tar
-tar cf file.tar {file_or_directory}
-
-# untar into current directory
-tar xf file.tar
-
-# show content of tar archive
-tar tf file.tar
-```
-Tar paremeter:
-   - <code>c</code> → create archive
-   - <code>t</code> → table of content
-   - <code>x</code> → extract
-   - <code>f</code> → file name
-   - <code>z</code> → use zip/gzip
-   - <code>j</code> → use bzip2
-   - <code>k</code> → don't override
-   - <code>w</code> → ask for confirmation
-   - <code>v</code> → verbose
-
-## gzip
-``` bash
-# compress file and rename to file.gz
-gzip file
-
-# decompress file.gz
-gzip -d file.gz
-```
-
 # File Operation from Network
 
 ## wget
