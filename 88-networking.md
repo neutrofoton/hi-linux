@@ -1,3 +1,83 @@
+# Basic Network Utility
+
+### <code>hostname</code>
+
+```bash
+# get hostname
+hostname
+
+# get IP (private ip) of hostname
+hostname -i
+```
+
+> NAT (Network Address Translation)<br/>
+> Using NAT computers with private IP addresses could communicate with other comuters in internet
+
+### <code>ifconfig</code>
+```bash
+# show detail network interfaces 
+ifconfig
+```
+### <code>ip -> ip address</code>
+```bash
+# show detail network interfaces 
+ip address
+
+# filter ip address
+ip address | grep inet
+```
+
+### <code>ip -> ip route</code>
+
+```bash
+# To get information about routing table in the computer.
+ip route
+```
+
+### <code>nslookup</code>
+<code>nslookup</code> is a command-line tool to discover the IP address or DNS record of a specific domain name. <br/>
+It also allows for reverse DNS lookup, letting you find the domain attached to an IP address. 
+
+```bash
+nslookup google.com
+
+# Respose
+Server:		xxx.xxx.xxx.xxx  # dns-server-ip
+Address:	xxx.xxx.xxx.xxx#53 # dns-server-ip#port_dns
+
+# show list of ip address of google.com
+Non-authoritative answer:
+Name:	google.com
+Address: aaa.aaa.aaa.aaa
+Name:	google.com
+Address: bbb.bbb.bbb.bbb
+Name:	google.com
+Address: ccc.ccc.ccc.ccc
+Name:	google.com
+Address: ddd.ddd.ddd.ddd
+Name:	google.com
+Address: eee.eee.eee.eee
+Name:	google.com
+Address: fff.fff.fff.fff
+
+```
+
+### <code>traceroute</code>
+```bash
+# show routing how we get target server
+traceroute google.com
+```
+
+### <code>netstat</code>
+``` bash
+#netstat -np <protocol> | find "port #"
+netstat -np TCP | find "80"
+
+# show table of all network interfaces
+netstat -i
+```
+
+
 # wget
 ``` bash
 # download file
@@ -60,13 +140,9 @@ The parameters are:
 - <code>R</code> → specifies remote port forwarding
 - <code>N</code> → do not execute a remote command.
 
-# Netstat
-``` bash
-#netstat -np <protocol> | find "port #"
-netstat -np TCP | find "80"
 
-# show table of all network interfaces
-netstat -i
-```
+
+
+
 # References
 - https://ret2rop.blogspot.com/2018/08/port-forwarding-ssh-tunneling.html
