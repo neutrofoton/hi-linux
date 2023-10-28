@@ -127,6 +127,10 @@ To manage access and permission we use <code>*chmode*</code>
 ```
 chown [OPTIONS] [USER][:GROUP] file1 file2
 
+# change the owner (user=myuser), the group owner is not changed.
+chown foo /home/foo/myfile.txt 
+
+# change (recursively) the /var/www/sitename to owner (user=myuser, group=mygroup)
 chown -R myuser:mygroup /var/www/sitename
 
 ```
