@@ -77,8 +77,18 @@ netstat -np TCP | find "80"
 netstat -i
 ```
 
+# Download Resources
 
-# wget
+### <code>curl</code>
+```bash
+curl url
+
+# download html page of www.google.com
+curl www.google.com
+```
+
+
+### <code>wget</code>
 ``` bash
 # download file
 wget url
@@ -109,9 +119,16 @@ Parameters:
 
 # SSH
 ``` bash
-# ssh to specific port
+# ssh to specific port. The deafault is 22
 ssh user@192.168.1.1 -p 2022
+
+# ssh to docker container on local computer use localhost for the computer remote server.
+# xxxx is local mapping port to the container port.
+ssh user@localhost -p xxxx 
 ```
+
+> If ssh using root user is not allowed, check ssh config on <code>/etc/ssh/sshd_config</code>
+
 
 ## Local Port Forward
 

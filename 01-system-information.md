@@ -194,6 +194,24 @@ which {app}
 which docker
 ```
 
+# Environment Variable
+``` bash
+# show key value pairs environment variable
+env
+
+# to get value of specific variable
+echo $PATH
+echo $JAVA_HOME
+echo $HOME
+echo $SHELL
+
+# add custom variable
+export MY_VARIABLE=Hello
+
+# read MY_VARIABLE
+echo $MY_VARIABLE
+
+```
 # References
 1. https://www.geeksforgeeks.org/linux-directory-structure/
 2. https://www.maketecheasier.com/differences-between-su-sudo-su-sudo-s-sudo-i/
