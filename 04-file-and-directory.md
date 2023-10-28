@@ -131,18 +131,6 @@ chown -R myuser:mygroup /var/www/sitename
 
 ```
 
-
-# File Operation from Network
-
-## wget
-``` bash
-# download file
-wget url
-
-# download recursively
-wget -r url
-```
-
 # Directoy Usage
 ```bash
 sudo du -sh /var/opt/mssql2022
