@@ -119,6 +119,33 @@ pwd
 exit
 ```
 
+By default, the root user account password is locked in Ubuntu Linux for security reasons. As a result, you can not login using root user or use a command such as <code>su -</code> to become a SuperUser. <br/>
+
+The procedure to change the root user password on Ubuntu Linux:
+- Type the following command to become root user and issue passwd
+  ```bash
+  sudo -i
+  passwd
+
+  # output:
+  New password: 
+  Retype new password:
+  ```
+- OR set a password for root user in a single go
+  ```bash
+  sudo passwd root
+
+  # output:
+  New password: 
+  Retype new password:
+  ```
+
+Test it your root password by typing the following command
+```bash
+# switch to root, as well as the home directory is switched to /root
+su -
+```
+
 ### Creating Users
 Detail list of existing user can be found in
 ```bash
