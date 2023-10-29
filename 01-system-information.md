@@ -281,6 +281,7 @@ echo $MY_VARIABLE
 
 ```
 # References
-1. https://www.geeksforgeeks.org/linux-directory-structure/
-2. https://www.maketecheasier.com/differences-between-su-sudo-su-sudo-s-sudo-i/
-3. https://apple.stackexchange.com/questions/14623/why-cant-i-run-su-and-how-should-i-do
+- https://www.geeksforgeeks.org/linux-directory-structure/
+- https://www.maketecheasier.com/differences-between-su-sudo-su-sudo-s-sudo-i/
+- https://apple.stackexchange.com/questions/14623/why-cant-i-run-su-and-how-should-i-do
+- https://www.cyberciti.biz/faq/change-root-password-ubuntu-linux/
