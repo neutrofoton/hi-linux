@@ -64,18 +64,59 @@ su otheruser
 
 # switch to other user, and switch current directory to the home of otheruser
 su - otheruser
+```
 
-# will give you superuser access, but you will still remain 'yourself' (so to speak).
-# so things like ~ will still be your home directory.
-sudo -s
 
+```bash
 # It’s essentially the same as just running su in the shell.
 # asks for the current user’s password rather than root
 # Root is given by requesting the current user’s password, which makes it possible to gain root without the root password.
+
 sudo su
 
+whoami
+# output:
+root
+
+pwd
+# output:
+/home/neutro
+
+exit
+```
+
+```bash
+# will give you superuser access, but you will still remain 'yourself' (so to speak).
+# so things like ~ will still be your home directory.
+
+sudo -s
+
+whoami
+# output:
+root
+
+pwd
+# output:
+/home/neutro
+
+exit
+```
+
+
+```bash
 # virtually the same as the sudo su command with one exception: it does not directly interact with the root user.
+
 sudo -i
+
+whoami
+# output:
+root
+
+pwd
+# output:
+/root
+
+exit
 ```
 
 ### Creating Users
