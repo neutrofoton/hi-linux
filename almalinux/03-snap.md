@@ -80,4 +80,5 @@ We can search through a wide selection of thousands of snaps hosted on the [Snap
 
 # Reference
 - https://ubuntuhandbook.org/index.php/2021/01/earch-install-remove-snap-apps-command-line/
+- https://linuxways.net/red-hat/how-to-enable-snap-on-rocky-linux-almalinux/
 - https://snapcraft.io/onlyoffice-desktopeditors

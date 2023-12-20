@@ -85,6 +85,10 @@ curl url
 
 # download html page of www.google.com
 curl www.google.com
+
+# download file
+# -L means allowing curl to follow any redirections
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
 ```
 
 
@@ -163,3 +167,4 @@ The parameters are:
 
 # References
 - https://ret2rop.blogspot.com/2018/08/port-forwarding-ssh-tunneling.html
+- https://explainshell.com/explain?cmd=curl+-O+-L+-C+-
