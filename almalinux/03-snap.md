@@ -40,7 +40,7 @@ We can search through a wide selection of thousands of snaps hosted on the [Snap
     ```
 
 # Using snap to manage snap packages
-- Search package. For example skype
+- Search package. For example onlyoffice
     ```bash
     sudo snap find onlyoffice
     ```
