@@ -34,7 +34,12 @@ read text
 etext=`echo -n $text | base64`
 echo "Encoded text is : $etext"
 ```
+# Environtment Variable
 
+```bash
+# print environment variables
+printenv
+```
 # Reference
 - https://stackoverflow.com/questions/37563795/base64-encode-gives-different-result-on-linux-centos-terminal-and-in-java
 - https://pubs.opengroup.org/onlinepubs/9699919799/utilities/echo.html
