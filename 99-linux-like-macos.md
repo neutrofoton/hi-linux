@@ -9,7 +9,7 @@ Configure Gnome Like MacOS (Ubuntu and Fedora)
 
    ```bash
    # install and make icon ubuntu instead of apple
-   ./install.sh -t all -i ubuntu
+   ./install.sh -t all -i tux
    sudo ./tweaks.sh
    ```
 
