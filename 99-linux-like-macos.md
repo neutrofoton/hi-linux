@@ -19,5 +19,6 @@ Configure Gnome Like MacOS (Ubuntu and Fedora)
     - Compiz alike magic lamp effect 
     - Dash to Dock 
     - Desktop Cube (optional)
+    - [Logo Menu](https://extensions.gnome.org/extension/4451/logo-menu/) 
 
 4. Open the Gnome Tweaks and Extensions, and Configure the installed extension and plugin.
