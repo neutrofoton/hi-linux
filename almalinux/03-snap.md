@@ -63,6 +63,20 @@ We can search through a wide selection of thousands of snaps hosted on the [Snap
     # remove AND clear all the app data
     snap remove --purge onlyoffice-desktopeditors
     ```
+    ```bash
+    # inspect changing
+    snap changes
+
+    # abort snap process of ID 212
+    snap abort 212
+
+   # example remove 
+   sudo snap remove --purge onlyoffice-desktopeditors
+
+   # refresh example
+   sudo snap refresh onlyoffice-desktopeditors
+
+    ```
 
 - List installed Snap applications
     ```bash
