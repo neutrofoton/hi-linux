@@ -14,11 +14,11 @@ Configure Gnome Like MacOS (Ubuntu and Fedora)
    ```
 
 3. In the Gnome extension portal (https://extensions.gnome.org), install
-    - User Themes
-    - Blur my Shell
-    - Compiz alike magic lamp effect 
-    - Dash to Dock 
-    - Desktop Cube (optional)
+    - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
+    - [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
+    - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/) 
+    - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) 
+    - [Desktop Cube](https://extensions.gnome.org/extension/4648/desktop-cube/)
     - [Logo Menu](https://extensions.gnome.org/extension/4451/logo-menu/) 
 
 4. Open the Gnome Tweaks and Extensions, and Configure the installed extension and plugin.
