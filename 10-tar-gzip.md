@@ -54,3 +54,17 @@ tar -xvzf ~/workspace/archieve.tar.gz
 tar -xvzf ../archieve.tar.gz
 
 ```
+
+# Rar Unrar
+Unrar files
+``` bash
+unrar -x FILE.rar
+```
+
+Unrar multiple file
+```bash
+for z in *.rar
+do
+   unrar -x $z
+done
+```
