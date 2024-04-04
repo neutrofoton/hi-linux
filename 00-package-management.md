@@ -102,5 +102,9 @@
 |FreeBSD (Port)             | sudo pkg delete <span style="color:red">package</span> |           | 
 |                           | cd /usr/ports/<span style="color:red">path_to_port</span> && make deinstall |           | 
 
+```bash
+dnf list --installed
+apt list --installed
+```
 # References
 1. https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg
