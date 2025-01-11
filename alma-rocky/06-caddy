@@ -1,7 +1,0 @@
-1. Make sure it does not block ports 80 and 443.
-  ```bash
-  sudo firewall-cmd --permanent --add-service={http,https}
-  sudo firewall-cmd --reload
-  ```
-
-2. 
