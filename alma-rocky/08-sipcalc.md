@@ -24,3 +24,8 @@
     ```bash
     sipcalc -V
     ```
+
+5. Use 
+    ```bash
+    sipcalc 10.244.0.0/16
+    ```
