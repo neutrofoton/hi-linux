@@ -18,3 +18,13 @@
     # clear local nuget cache
     dotnet nuget locals all --clear
     ```
+
+# dotnet Tools
+    ```bash
+    # list dotnet tools installed
+    dotnet tool list --global
+
+    # install dotnet tool outdated and run it.
+    dotnet tool install --global dotnet-outdated-tool
+    dotnet outdated
+    ```
