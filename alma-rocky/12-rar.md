@@ -30,3 +30,14 @@ The `unrar-free` does not support RAR v4 and above.
     export PATH=$PATH:$HOME/sdk/rar
 
     ```
+
+4. Verify
+    ```bash
+    unrar | head -n 2
+
+    # output:
+    UNRAR 6.23 freeware      Copyright (c) 1993-2023 Alexander Roshal
+
+    ```
+
+5. Extract your RAR file (`unrar x <file>`).
