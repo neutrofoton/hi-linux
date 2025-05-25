@@ -1,4 +1,5 @@
 # Compiling <code>sipcalc</code> from Source
+Sipcalc is an advanced console-based IP subnet calculator
 
 1. Install dependencies
     ```bash
