@@ -53,5 +53,13 @@
     Type <code>p10k configure</code> if the configuration wizard doesn't start automatically
     
 
+Note:
+- for change icon in terminal:
+  Edit the `~/.p10k.zsh`. Add the following line at the end of the file
+
+  ```
+  # Override OS icon jadi logo Tux
+  typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='🐧'
+  ```
 # Reference
 - https://github.com/romkatv/powerlevel10k
