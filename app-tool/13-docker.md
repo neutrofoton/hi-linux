@@ -25,6 +25,6 @@ permission denied while trying to connect to the docker API at unix:///var/run/d
   set group tambahan (supplementary group) user ke group `docker`
   ```
   
-- `$USER`
+- `$USER` <br/>
    username kamu yang sedang login
   
