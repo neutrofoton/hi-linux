@@ -26,6 +26,5 @@ permission denied while trying to connect to the docker API at unix:///var/run/d
   ```
   
 - `$USER`
-   ```bash
    username kamu yang sedang login
-   ```
+  
