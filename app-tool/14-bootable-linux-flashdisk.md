@@ -27,7 +27,7 @@ nvme0n1     259:0    0 931.5G  0 disk
 
 # Step 2: Unmount
 ```bash
-unmount /dev/sda1
+umount /dev/sda1
 ```
 
 # Step 3: Tulis iso ke FlashDisk
