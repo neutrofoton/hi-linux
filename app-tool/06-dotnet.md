@@ -57,33 +57,44 @@
     ```
 
 # Manual Installation (Multi Version)
-```bash
-tar -zxf Downloads/dotnet-sdk-9.0.313-linux-x64.tar.gz -C ~/.dotnet
-tar -zxf Downloads/dotnet-sdk-10.0.203-linux-x64.tar.gz -C ~/.dotnet
-```
+1. Extract semua ke directory ~/.dotnet
+    ```bash
+    tar -zxf Downloads/dotnet-sdk-9.0.313-linux-x64.tar.gz -C ~/.dotnet
+    tar -zxf Downloads/dotnet-sdk-10.0.203-linux-x64.tar.gz -C ~/.dotnet
+    ```
+    
+    Impact dari 2 command diatas akan merge dan replace di beberapa part:
+    ```
+    ~/.dotnet/
+    ├── dotnet                  # updated/replaced
+    ├── host                    # merged
+    ├── packs                   # merged
+    ├── sdk
+    │   ├── 9.0.313             # tetap ada
+    │   └── 10.0.203            # ditambah
+    ├── shared
+    │   ├── Microsoft.NETCore.App
+    │   │   ├── 9.0.x           # tetap ada
+    │   │   └── 10.0.x          # ditambah
+    │   └── Microsoft.AspNetCore.App
+    │       ├── 9.0.x           # tetap ada
+    │       └── 10.0.x          # ditambah
+    ```
+    
+    | Flag | Arti             | Fungsi                   |
+    | ---- | ---------------- | ------------------------ |
+    | `-z` | gzip             | buka kompresi `.gz`      |
+    | `-x` | extract          | keluarkan isi archive    |
+    | `-f` | file             | pakai file archive ini   |
+    | `-C` | change directory | extract ke folder tujuan |
 
-Impact dari 2 command diatas akan merge dan replace di beberapa part:
-```
-~/.dotnet/
-├── dotnet                  # updated/replaced
-├── host                    # merged
-├── packs                   # merged
-├── sdk
-│   ├── 9.0.313             # tetap ada
-│   └── 10.0.203            # ditambah
-├── shared
-│   ├── Microsoft.NETCore.App
-│   │   ├── 9.0.x           # tetap ada
-│   │   └── 10.0.x          # ditambah
-│   └── Microsoft.AspNetCore.App
-│       ├── 9.0.x           # tetap ada
-│       └── 10.0.x          # ditambah
-```
+2. Register di PATH
+    ```
+    export DOTNET_ROOT=$HOME/.dotnet
+    export PATH=$HOME/.dotnet:$PATH
+    export DOTNET_MULTILEVEL_LOOKUP=0
+    ```
 
-| Flag | Arti             | Fungsi                   |
-| ---- | ---------------- | ------------------------ |
-| `-z` | gzip             | buka kompresi `.gz`      |
-| `-x` | extract          | keluarkan isi archive    |
-| `-f` | file             | pakai file archive ini   |
-| `-C` | change directory | extract ke folder tujuan |
-
+    `DOTNET_MULTILEVEL_LOOKUP=0` dipakai untuk mematikan pencarian .NET ke lokasi install lain di luar `DOTNET_ROOT` / PATH yang kamu set.
+3.  Check `dotnet --version`   
+4. 
