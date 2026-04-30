@@ -55,3 +55,35 @@
     ```bash
     dotnet --info
     ```
+
+# Manual Installation (Multi Version)
+```bash
+tar -zxf Downloads/dotnet-sdk-9.0.313-linux-x64.tar.gz -C ~/.dotnet
+tar -zxf Downloads/dotnet-sdk-10.0.203-linux-x64.tar.gz -C ~/.dotnet
+```
+
+Impact dari 2 command diatas akan merge dan replace di beberapa part:
+```
+~/.dotnet/
+├── dotnet                  # updated/replaced
+├── host                    # merged
+├── packs                   # merged
+├── sdk
+│   ├── 9.0.313             # tetap ada
+│   └── 10.0.203            # ditambah
+├── shared
+│   ├── Microsoft.NETCore.App
+│   │   ├── 9.0.x           # tetap ada
+│   │   └── 10.0.x          # ditambah
+│   └── Microsoft.AspNetCore.App
+│       ├── 9.0.x           # tetap ada
+│       └── 10.0.x          # ditambah
+```
+
+| Flag | Arti             | Fungsi                   |
+| ---- | ---------------- | ------------------------ |
+| `-z` | gzip             | buka kompresi `.gz`      |
+| `-x` | extract          | keluarkan isi archive    |
+| `-f` | file             | pakai file archive ini   |
+| `-C` | change directory | extract ke folder tujuan |
+
