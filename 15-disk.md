@@ -23,5 +23,11 @@ The fdisk command is a text-based utility used to manage disk partitions. Using 
 sudo fdisk -l
 ```
 
+# Checking
+- Check directory consume high volume
+  ```
+  sudo du -xh --max-depth=1 /var | sort -hr
+  ```
+
 # References
 - https://linuxopsys.com/topics/how-to-list-disks-in-linux
